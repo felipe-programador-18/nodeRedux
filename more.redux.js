@@ -19,3 +19,7 @@ function CaugetState(){
 const story = redux.createStore(CounterState)
 // remember i have subscribe story alwatys
 story.subscribe(CaugetState)
+
+// create variable to adding value or decrement value
+const increment = {type:"INCREMENT", value:7}
+const decrement = {type:"DECREMENT", value:5}
