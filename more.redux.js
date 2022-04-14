@@ -10,3 +10,12 @@ function CounterState (state=1, action){
       }
       return state
 }
+
+function CaugetState(){
+    console.log(story.getState())
+}
+
+// this is very interesting story is very imporant
+const story = redux.createStore(CounterState)
+// remember i have subscribe story alwatys
+story.subscribe(CaugetState)
