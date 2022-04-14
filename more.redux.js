@@ -6,7 +6,7 @@ function CounterState (state=1, action){
           case'INCREMENT':
             return state + action.value
           case 'DECREMENT':
-            return state + action.value
+            return state - action.value
       }
       return state
 }
